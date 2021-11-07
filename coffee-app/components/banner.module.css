@@ -1,0 +1,56 @@
+.container {
+  margin-bottom: 6rem;
+}
+
+.title {
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  color: var(--text-black);
+
+  font-size: 3rem;
+  line-height: 1;
+}
+
+
+.title1{
+  color: rgba(249, 250, 251, 1);
+
+}
+
+.title2 {  
+  display: block;
+  color: var(--text-purple);
+}
+
+.subTitle {
+  margin-top: 0.75 rem;
+  font-size: 1.5 rem;
+  line-height: 2 rem;
+
+  color: var(--text-white-100);
+}
+
+.buttonWrapper {
+  margin-top: 1.25 rem;
+}
+
+.button{
+  background-color: var(--text-purple-dark);
+  cursor: pointer;
+  color: white;
+  outline: 0;
+  border: 0;
+
+  padding-top: 1 rem;
+  padding-bottom: 1 rem;
+  font-size: 1.125 rem;
+  line-height: 1.75 rem;
+  padding-left: 2.5 rem;
+  padding-right:  2.5 rem;
+}
+
+
+
+.button:hover {
+  background-color: var(--text-purple-dark);
+}
