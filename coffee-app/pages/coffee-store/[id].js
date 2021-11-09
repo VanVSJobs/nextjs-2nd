@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { Link } from 'next/link';
 
 const CoffeeStore = () => {
+  console.log('here');
   const router = useRouter();
   return (
     <div>
