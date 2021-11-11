@@ -4,12 +4,11 @@ body {
   margin: 0;
   font-family: 'Mochiy Pop One';
 
-  background: url("/static/mesh-gradient.png");
+  background: url("/static/new-mesh.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   color: #0A3FB1;
-  height: 100%;
 }
 
 

@@ -19,12 +19,15 @@
   z-index: 1;
 }
 
+
 .cardLayout {
+  padding-top: 0fr;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   column-gap: 1.5rem;
   row-gap: 1.5rem;
 }
+
 
 .card {
   justify-content: center;
@@ -107,7 +110,9 @@
   .main {
     margin-top: 7rem /* 112px */;
   }
+
   .cardLayout {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+
   }
 }

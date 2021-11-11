@@ -5,7 +5,7 @@ const Banner = (props) => {
     <div className={styles.container}>
       <h1 className={styles.title}>
         <span> Van's</span>
-        <span className={styles.subTitle}> Coffee Store collection</span>
+        <span className={styles.subTitle}> Coffee Stores</span>
       </h1>
       <p className={styles.title1}>Best local coffee store</p>
       <div className={styles.buttonWrapper}>
