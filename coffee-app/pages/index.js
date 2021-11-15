@@ -4,12 +4,13 @@ import styles from '../styles/Home.module.css';
 
 import Banner from '../components/banner';
 import Card from '../components/card';
-
-import coffeeStoresData from '../data/coffee-stores.json';
+import { fetchCoffeeStores } from '../lib/coffee-stores';
 
 export async function getStaticProps(context) {
+  const coffeeStores = await fetchCoffeeStores();
+
   return {
-    props: { coffeeStores: coffeeStoresData },
+    props: { coffeeStores },
   };
 }
 
@@ -42,7 +43,10 @@ export default function Home(props) {
                     <Card
                       key={coffeeStores.id}
                       name={coffeeStores.name}
-                      imgUrl={coffeeStores.imgUrl}
+                      imgUrl={
+                        coffeeStores.imgUrl ||
+                        'https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80'
+                      }
                       href={`/coffee-store/${coffeeStores.id}`}
                       className={styles.card}
                     />
